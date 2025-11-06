@@ -142,16 +142,16 @@
                 <div class="contact-content">
                     <h2 data-i18n="contact.title">Ready to transform your workflows?</h2>
                     <p data-i18n="contact.description">Schedule a demo to see how Hapsen can streamline your healthcare operations while keeping your data secure.</p>
-                    <form class="contact-form" id="contactForm">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mzzknvgr" method="POST">
                         <div class="form-row">
-                            <input type="text" data-i18n-placeholder="contact.form.name" placeholder="Name" required>
-                            <input type="email" data-i18n-placeholder="contact.form.email" placeholder="Email" required>
+                            <input name="name" type="text" data-i18n-placeholder="contact.form.name" placeholder="Name" required>
+                            <input name="email" type="email" data-i18n-placeholder="contact.form.email" placeholder="Email" required>
                         </div>
                         <div class="form-row">
-                            <input type="text" data-i18n-placeholder="contact.form.organization" placeholder="Organization" required>
-                            <input type="tel" data-i18n-placeholder="contact.form.phone" placeholder="Phone">
+                            <input name="organization" type="text" data-i18n-placeholder="contact.form.organization" placeholder="Organization" required>
+                            <input name="phone" type="tel" data-i18n-placeholder="contact.form.phone" placeholder="Phone">
                         </div>
-                        <textarea data-i18n-placeholder="contact.form.message" placeholder="Tell us about your needs" rows="4"></textarea>
+                        <textarea name="message" data-i18n-placeholder="contact.form.message" placeholder="Tell us about your needs" rows="4"></textarea>
                         <button type="submit" class="primary-button" data-i18n="contact.form.submit">Request Demo</button>
                     </form>
                 </div>

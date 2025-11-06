@@ -118,37 +118,73 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Form submission handling
+// Form submission handling with Formspree
 const contactForm = document.getElementById('contactForm');
 
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // Get form data
-    const formData = new FormData(contactForm);
-
-    // Show success message (in a real app, this would send to a backend)
     const button = contactForm.querySelector('button');
     const originalText = button.textContent;
+    const formData = new FormData(contactForm);
 
+    // Show sending state
     button.textContent = 'Sending...';
     button.disabled = true;
 
-    // Simulate form submission
-    setTimeout(() => {
-        button.textContent = 'Demo Request Sent!';
-        button.style.background = 'var(--success-green)';
+    try {
+        // Submit to Formspree
+        const response = await fetch(contactForm.action, {
+            method: contactForm.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
 
-        // Reset form
-        contactForm.reset();
+        if (response.ok) {
+            // Success - show success message
+            button.textContent = 'Demo Request Sent!';
+            button.style.background = 'var(--success-green)';
 
-        // Reset button after 3 seconds
+            // Reset form
+            contactForm.reset();
+
+            // Reset button after 3 seconds
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.disabled = false;
+                button.style.background = '';
+            }, 3000);
+        } else {
+            // Error from Formspree
+            const data = await response.json();
+            let errorMessage = 'Oops! There was a problem submitting your form';
+
+            if (data.errors) {
+                errorMessage = data.errors.map(error => error.message).join(', ');
+            }
+
+            button.textContent = errorMessage;
+            button.disabled = false;
+
+            // Reset button after 5 seconds
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.style.background = '';
+            }, 5000);
+        }
+    } catch (error) {
+        // Network error
+        button.textContent = 'Network error. Please try again.';
+        button.disabled = false;
+
+        // Reset button after 5 seconds
         setTimeout(() => {
             button.textContent = originalText;
-            button.disabled = false;
             button.style.background = '';
-        }, 3000);
-    }, 1500);
+        }, 5000);
+    }
 });
 
 // Intersection Observer for fade-in animations
