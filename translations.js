@@ -485,5 +485,86 @@ const translations = {
             getInTouch: "تواصل معنا",
             copyright: "© 2025 Hapsen. جميع الحقوق محفوظة."
         }
+    },
+    pt: {
+        nav: {
+            features: "Recursos",
+            security: "Segurança",
+            about: "Sobre",
+            getStarted: "Começar"
+        },
+        hero: {
+            title: "IA médica que permanece no local",
+            subtitle: "Inteligência artificial isolada da rede para gerenciamento de fluxo de trabalho de pacientes e tarefas procedimentais. Seus dados nunca deixam sua instalação.",
+            requestDemo: "Solicitar uma Demonstração",
+            learnMore: "Saiba Mais"
+        },
+        features: {
+            title: "Construído para fluxos de trabalho médicos modernos",
+            card1: {
+                title: "Isolado da Rede",
+                description: "Implantação completamente isolada. Os dados dos seus pacientes permanecem dentro da sua infraestrutura, garantindo máxima privacidade e conformidade."
+            },
+            card2: {
+                title: "Automação de Fluxo de Trabalho",
+                description: "Simplifique admissão de pacientes, agendamento, documentação e tarefas procedimentais com automação inteligente."
+            },
+            card3: {
+                title: "IA no Local",
+                description: "Modelos de IA de última geração implantados diretamente em suas instalações. Sem dependências de nuvem, sem transmissão de dados."
+            },
+            card4: {
+                title: "Excelência Procedimental",
+                description: "Oriente equipes clínicas através de procedimentos complexos com listas de verificação inteligentes e suporte de decisão em tempo real."
+            },
+            card5: {
+                title: "Integração Perfeita",
+                description: "Funciona com seus sistemas EHR e de saúde existentes sem interromper os fluxos de trabalho atuais."
+            },
+            card6: {
+                title: "Privacidade por Design",
+                description: "Construído com os requisitos de privacidade de dados médicos em mente. Sua infraestrutura, seu controle, seu caminho de conformidade."
+            }
+        },
+        security: {
+            title: "Seus dados são seus",
+            description: "As soluções tradicionais de IA médica exigem o envio de dados sensíveis de pacientes para a nuvem. Hapsen é diferente.",
+            item1: {
+                title: "Conectividade externa zero",
+                description: "Modelos de IA executam inteiramente dentro do seu perímetro de rede"
+            },
+            item2: {
+                title: "Implantação local",
+                description: "Controle total sobre sua infraestrutura e dados"
+            }
+        },
+        about: {
+            title: "Transformando operações de saúde",
+            paragraph1: "Os provedores de saúde enfrentam uma carga administrativa crescente, fluxos de trabalho complexos e requisitos rigorosos de privacidade de dados. Hapsen preenche a lacuna entre as capacidades de IA de ponta e as necessidades únicas de segurança da saúde.",
+            paragraph2: "Nossa plataforma de IA isolada da rede capacita equipes clínicas a se concentrarem no cuidado do paciente enquanto automatiza fluxos de trabalho rotineiros, reduz erros e mantém soberania completa de dados."
+        },
+        contact: {
+            title: "Pronto para transformar seus fluxos de trabalho?",
+            description: "Agende uma demonstração para ver como a Hapsen pode otimizar suas operações de saúde mantendo seus dados seguros.",
+            form: {
+                name: "Nome",
+                email: "E-mail",
+                organization: "Organização",
+                phone: "Telefone",
+                message: "Conte-nos sobre suas necessidades",
+                submit: "Solicitar Demonstração",
+                sending: "Enviando...",
+                success: "Solicitação de Demonstração Enviada!",
+                error: "Houve um problema ao enviar seu formulário",
+                networkError: "Erro de rede. Por favor, tente novamente."
+            }
+        },
+        footer: {
+            tagline: "Gerenciamento de fluxo de trabalho médico com IA",
+            product: "Produto",
+            contact: "Contato",
+            getInTouch: "Entre em Contato",
+            copyright: "© 2025 Hapsen. Todos os direitos reservados."
+        }
     }
 };
