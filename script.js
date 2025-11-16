@@ -63,6 +63,14 @@ function applyTranslations(lang) {
     // Update HTML lang attribute
     document.documentElement.lang = lang;
 
+    // Update text direction for RTL languages (e.g., Arabic, Hebrew)
+    const rtlLanguages = ['ar', 'he', 'fa', 'ur'];
+    if (rtlLanguages.includes(lang)) {
+        document.documentElement.setAttribute('dir', 'rtl');
+    } else {
+        document.documentElement.setAttribute('dir', 'ltr');
+    }
+
     // Save preference
     localStorage.setItem('preferredLanguage', lang);
 }
