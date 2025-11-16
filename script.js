@@ -87,25 +87,109 @@ function applyTranslations(lang) {
     localStorage.setItem('preferredLanguage', lang);
 }
 
-// Toggle between languages
-function toggleLanguage() {
-    const supportedLanguages = ['en', 'ko', 'ja', 'zh', 'es', 'ar', 'pt'];
-    const currentLang = localStorage.getItem('preferredLanguage') || getPreferredLanguage();
-    const currentIndex = supportedLanguages.indexOf(currentLang);
-    const nextIndex = (currentIndex + 1) % supportedLanguages.length;
-    const newLang = supportedLanguages[nextIndex];
-    applyTranslations(newLang);
+// Toggle language dropdown
+function toggleLanguageDropdown() {
+    const dropdown = document.getElementById('languageDropdown');
+    const toggle = document.getElementById('languageToggle');
+    const isOpen = dropdown.classList.contains('open');
+
+    if (isOpen) {
+        dropdown.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+    } else {
+        dropdown.classList.add('open');
+        toggle.setAttribute('aria-expanded', 'true');
+        // Focus first menu item for keyboard navigation
+        const firstButton = dropdown.querySelector('button');
+        if (firstButton) firstButton.focus();
+    }
+}
+
+// Change language
+function changeLanguage(lang) {
+    applyTranslations(lang);
+
+    // Close dropdown
+    const dropdown = document.getElementById('languageDropdown');
+    const toggle = document.getElementById('languageToggle');
+    dropdown.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+
+    // Update active state
+    updateActiveLanguage(lang);
+}
+
+// Update active language in dropdown
+function updateActiveLanguage(lang) {
+    const buttons = document.querySelectorAll('.language-dropdown button');
+    buttons.forEach(button => {
+        if (button.getAttribute('data-lang') === lang) {
+            button.classList.add('active');
+        } else {
+            button.classList.remove('active');
+        }
+    });
 }
 
 // Initialize language on page load
 document.addEventListener('DOMContentLoaded', () => {
     const preferredLang = getPreferredLanguage();
     applyTranslations(preferredLang);
+    updateActiveLanguage(preferredLang);
 
     // Setup language toggle button
     const languageToggle = document.getElementById('languageToggle');
-    if (languageToggle) {
-        languageToggle.addEventListener('click', toggleLanguage);
+    const languageDropdown = document.getElementById('languageDropdown');
+
+    if (languageToggle && languageDropdown) {
+        // Toggle dropdown on button click
+        languageToggle.addEventListener('click', toggleLanguageDropdown);
+
+        // Language selection
+        const languageButtons = languageDropdown.querySelectorAll('button');
+        languageButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const lang = button.getAttribute('data-lang');
+                changeLanguage(lang);
+            });
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!languageToggle.contains(e.target) && !languageDropdown.contains(e.target)) {
+                languageDropdown.classList.remove('open');
+                languageToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Keyboard navigation
+        languageToggle.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && languageDropdown.classList.contains('open')) {
+                languageDropdown.classList.remove('open');
+                languageToggle.setAttribute('aria-expanded', 'false');
+                languageToggle.focus();
+            }
+        });
+
+        languageDropdown.addEventListener('keydown', (e) => {
+            const buttons = Array.from(languageDropdown.querySelectorAll('button'));
+            const currentIndex = buttons.indexOf(document.activeElement);
+
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                const nextIndex = (currentIndex + 1) % buttons.length;
+                buttons[nextIndex].focus();
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                const prevIndex = (currentIndex - 1 + buttons.length) % buttons.length;
+                buttons[prevIndex].focus();
+            } else if (e.key === 'Escape') {
+                languageDropdown.classList.remove('open');
+                languageToggle.setAttribute('aria-expanded', 'false');
+                languageToggle.focus();
+            }
+        });
     }
 });
 

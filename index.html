@@ -123,9 +123,19 @@
                     <li><a href="#about" data-i18n="nav.about">About</a></li>
                     <li><a href="#contact" class="cta-button" data-i18n="nav.getStarted">Get Started</a></li>
                     <li class="language-switcher">
-                        <button id="languageToggle" class="language-button" aria-label="Switch language" aria-haspopup="false">
+                        <button id="languageToggle" class="language-button" aria-label="Switch language" aria-haspopup="true" aria-expanded="false">
                             <span class="current-lang" aria-hidden="true">EN</span>
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
                         </button>
+                        <ul class="language-dropdown" id="languageDropdown" role="menu" aria-label="Language options">
+                            <li role="none"><button role="menuitem" data-lang="en">English</button></li>
+                            <li role="none"><button role="menuitem" data-lang="ko">한국어</button></li>
+                            <li role="none"><button role="menuitem" data-lang="ja">日本語</button></li>
+                            <li role="none"><button role="menuitem" data-lang="zh">中文</button></li>
+                            <li role="none"><button role="menuitem" data-lang="es">Español</button></li>
+                            <li role="none"><button role="menuitem" data-lang="ar">العربية</button></li>
+                            <li role="none"><button role="menuitem" data-lang="pt">Português</button></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
