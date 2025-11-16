@@ -84,20 +84,33 @@ if (browserLang.startsWith('ko')) {
 
 ## Contact Form
 
-The contact form currently displays a success animation but doesn't submit data anywhere. To make it functional:
+The contact form is integrated with Formspree and is fully functional. Form submissions are sent to the configured email address.
 
-**Option 1: Formspree (Recommended for static sites)**
+## Analytics (Future Consideration)
+
+For privacy-aligned analytics, consider implementing **Plausible Analytics** (https://plausible.io):
+
+**Why Plausible:**
+- **Brand alignment**: Demonstrates "privacy by design" philosophy that matches Hapsen's core values
+- **No cookie consent needed**: GDPR/CCPA compliant without annoying cookie banners
+- **Lightweight**: <1KB script vs 45KB for Google Analytics
+- **Simple metrics**: Pageviews, referrers, devices, conversions - everything needed without complexity
+- **Healthcare-appropriate**: No personal data collection or visitor tracking
+
+**Implementation:**
 ```html
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<!-- Add to <head> section of index.html -->
+<script defer data-domain="hapsen.tech" src="https://plausible.io/js/script.js"></script>
 ```
 
-**Option 2: Netlify Forms**
-```html
-<form data-netlify="true">
-```
+**Cost:** $9/month for up to 10k monthly pageviews
 
-**Option 3: EmailJS**
-Use their JavaScript SDK to send emails directly from the client.
+**Alternative options considered:**
+- Google Analytics: Comprehensive but requires cookie consent and conflicts with privacy messaging
+- Fathom Analytics: Similar to Plausible but $14/month
+- Simple Analytics: €19/month with AI insights
+
+For a healthcare AI company where data privacy is the core value proposition, privacy-first analytics tools like Plausible are the natural choice.
 
 ## Images
 
