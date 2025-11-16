@@ -127,10 +127,14 @@ contactForm.addEventListener('submit', async (e) => {
     const button = contactForm.querySelector('button');
     const originalText = button.textContent;
     const formData = new FormData(contactForm);
+    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    const formStatus = document.getElementById('formStatus');
 
     // Show sending state
-    button.textContent = 'Sending...';
+    const sendingText = getTranslation(currentLang, 'contact.form.sending');
+    button.textContent = sendingText;
     button.disabled = true;
+    formStatus.textContent = sendingText;
 
     try {
         // Submit to Formspree
@@ -144,8 +148,10 @@ contactForm.addEventListener('submit', async (e) => {
 
         if (response.ok) {
             // Success - show success message
-            button.textContent = 'Demo Request Sent!';
+            const successText = getTranslation(currentLang, 'contact.form.success');
+            button.textContent = successText;
             button.style.background = 'var(--success-green)';
+            formStatus.textContent = successText;
 
             // Reset form
             contactForm.reset();
@@ -155,11 +161,12 @@ contactForm.addEventListener('submit', async (e) => {
                 button.textContent = originalText;
                 button.disabled = false;
                 button.style.background = '';
+                formStatus.textContent = '';
             }, 3000);
         } else {
             // Error from Formspree
             const data = await response.json();
-            let errorMessage = 'Oops! There was a problem submitting your form';
+            let errorMessage = getTranslation(currentLang, 'contact.form.error');
 
             if (data.errors) {
                 errorMessage = data.errors.map(error => error.message).join(', ');
@@ -167,87 +174,100 @@ contactForm.addEventListener('submit', async (e) => {
 
             button.textContent = errorMessage;
             button.disabled = false;
+            formStatus.textContent = errorMessage;
 
             // Reset button after 5 seconds
             setTimeout(() => {
                 button.textContent = originalText;
                 button.style.background = '';
+                formStatus.textContent = '';
             }, 5000);
         }
     } catch (error) {
         // Network error
-        button.textContent = 'Network error. Please try again.';
+        const networkErrorText = getTranslation(currentLang, 'contact.form.networkError');
+        button.textContent = networkErrorText;
         button.disabled = false;
+        formStatus.textContent = networkErrorText;
 
         // Reset button after 5 seconds
         setTimeout(() => {
             button.textContent = originalText;
             button.style.background = '';
+            formStatus.textContent = '';
         }, 5000);
     }
 });
 
 // Intersection Observer for fade-in animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
+// Check if user prefers reduced motion
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
+if (!prefersReducedMotion) {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // Observe feature cards
+    document.querySelectorAll('.feature-card').forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = `all 0.6s ease ${index * 0.1}s`;
+        observer.observe(card);
     });
-}, observerOptions);
 
-// Observe feature cards
-document.querySelectorAll('.feature-card').forEach((card, index) => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(30px)';
-    card.style.transition = `all 0.6s ease ${index * 0.1}s`;
-    observer.observe(card);
-});
+    // Observe sections
+    document.querySelectorAll('section').forEach(section => {
+        observer.observe(section);
+    });
+}
 
-// Observe sections
-document.querySelectorAll('section').forEach(section => {
-    observer.observe(section);
-});
-
-// Add mobile menu toggle (for future mobile menu implementation)
+// Mobile menu implementation
 const createMobileMenu = () => {
     const navLinks = document.querySelector('.nav-links');
+    const container = navbar.querySelector('.container');
     const isMobile = window.innerWidth <= 640;
 
     if (isMobile && !document.querySelector('.mobile-menu-toggle')) {
         const toggleButton = document.createElement('button');
         toggleButton.classList.add('mobile-menu-toggle');
-        toggleButton.innerHTML = '☰';
-        toggleButton.style.cssText = `
-            display: block;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: var(--text-dark);
-            cursor: pointer;
-        `;
+        toggleButton.setAttribute('aria-label', 'Toggle navigation menu');
+        toggleButton.setAttribute('aria-expanded', 'false');
+        toggleButton.setAttribute('aria-controls', 'nav-links');
+        toggleButton.innerHTML = '<span aria-hidden="true">☰</span>';
+
+        navLinks.setAttribute('id', 'nav-links');
+        navLinks.classList.add('mobile-hidden');
 
         toggleButton.addEventListener('click', () => {
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-            if (navLinks.style.display === 'flex') {
-                navLinks.style.flexDirection = 'column';
-                navLinks.style.position = 'absolute';
-                navLinks.style.top = '100%';
-                navLinks.style.left = '0';
-                navLinks.style.right = '0';
-                navLinks.style.background = 'white';
-                navLinks.style.padding = '1rem';
-                navLinks.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
-            }
+            const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
+            toggleButton.setAttribute('aria-expanded', !isExpanded);
+            navLinks.classList.toggle('mobile-visible');
+            navLinks.classList.toggle('mobile-hidden');
+            toggleButton.innerHTML = isExpanded ? '<span aria-hidden="true">☰</span>' : '<span aria-hidden="true">✕</span>';
         });
 
-        navbar.querySelector('.container').appendChild(toggleButton);
+        // Close menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('mobile-visible');
+                navLinks.classList.add('mobile-hidden');
+                toggleButton.setAttribute('aria-expanded', 'false');
+                toggleButton.innerHTML = '<span aria-hidden="true">☰</span>';
+            });
+        });
+
+        container.appendChild(toggleButton);
     }
 };
 
@@ -257,7 +277,8 @@ window.addEventListener('resize', () => {
     if (window.innerWidth > 640) {
         const toggle = document.querySelector('.mobile-menu-toggle');
         if (toggle) toggle.remove();
-        document.querySelector('.nav-links').style = '';
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.remove('mobile-visible', 'mobile-hidden');
     } else {
         createMobileMenu();
     }

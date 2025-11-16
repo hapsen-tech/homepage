@@ -6,19 +6,21 @@
 }
 
 :root {
-    /* Color Palette - Clean healthtech blue/teal theme */
-    --primary-color: #0066CC;
-    --primary-dark: #004C99;
-    --secondary-color: #00B4D8;
-    --accent-color: #48CAE4;
-    --text-dark: #1A1A1A;
-    --text-medium: #4A5568;
-    --text-light: #718096;
-    --bg-white: #FFFFFF;
-    --bg-light: #F7FAFC;
-    --bg-lighter: #EDF2F7;
-    --border-color: #E2E8F0;
-    --success-green: #10B981;
+    /* Color Palette - Hapsen green brand theme (Dark Mode) */
+    --primary-color: #11e212;
+    --primary-dark: #0db50e;
+    --secondary-color: #00D84A;
+    --accent-color: #48E472;
+    --text-dark: #F5F5F5;           /* 16.28:1 on #1E1E1E - Excellent */
+    --text-medium: #C7C7C7;         /* 8.59:1 on #1E1E1E - WCAG AAA */
+    --text-light: #B3B3B3;          /* 5.74:1 on #1E1E1E - WCAG AA+ (improved from #A0A0A0) */
+    --bg-white: #2A2A2A;
+    --bg-light: #363636;
+    --bg-lighter: #424242;
+    --bg-gray: #303030;
+    --bg-darker: #1E1E1E;
+    --border-color: #4A4A4A;
+    --success-green: #11e212;
 
     /* Typography */
     --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -39,16 +41,17 @@ body {
 
 /* Navigation */
 .navbar {
-    background: var(--bg-white);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    background: var(--bg-darker);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     position: sticky;
     top: 0;
     z-index: 1000;
     transition: all 0.3s ease;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .navbar.scrolled {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .navbar .container {
@@ -59,9 +62,20 @@ body {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo-icon {
+    height: 2.5rem;
+    width: auto;
+}
+
+.logo-text {
     font-size: 1.75rem;
     font-weight: 300;
-    color: var(--primary-color);
+    color: var(--text-dark);
     letter-spacing: -0.5px;
 }
 
@@ -84,18 +98,23 @@ body {
     color: var(--primary-color);
 }
 
+.nav-links li {
+    margin: 0;
+}
+
 .cta-button {
     background: var(--primary-color);
-    color: white !important;
+    color: #1A1A1A !important;
     padding: 0.6rem 1.5rem;
     border-radius: 6px;
     transition: all 0.3s ease;
+    font-weight: 600;
 }
 
 .cta-button:hover {
     background: var(--primary-dark);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+    box-shadow: 0 4px 12px rgba(17, 226, 18, 0.4);
 }
 
 /* Language Switcher */
@@ -128,7 +147,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 6rem 0;
-    background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-white) 100%);
+    background: var(--bg-gray);
 }
 
 .hero .container {
@@ -161,7 +180,7 @@ body {
 
 .primary-button {
     background: var(--primary-color);
-    color: white;
+    color: #1A1A1A;
     padding: 1rem 2rem;
     border-radius: 8px;
     text-decoration: none;
@@ -175,8 +194,9 @@ body {
 
 .primary-button:hover {
     background: var(--primary-dark);
+    color: #1A1A1A;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 102, 204, 0.3);
+    box-shadow: 0 8px 20px rgba(17, 226, 18, 0.4);
 }
 
 .secondary-button {
@@ -204,7 +224,7 @@ body {
 /* Features Section */
 .features {
     padding: 6rem 0;
-    background: var(--bg-white);
+    background: var(--bg-darker);
 }
 
 .features h2 {
@@ -223,7 +243,7 @@ body {
 
 .feature-card {
     padding: 2.5rem;
-    background: var(--bg-light);
+    background: var(--bg-white);
     border-radius: 12px;
     transition: all 0.3s ease;
     border: 1px solid var(--border-color);
@@ -231,8 +251,9 @@ body {
 
 .feature-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-    border-color: var(--accent-color);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    border-color: var(--primary-color);
+    background: var(--bg-light);
 }
 
 .feature-icon {
@@ -255,7 +276,7 @@ body {
 /* Security Section */
 .security {
     padding: 6rem 0;
-    background: var(--bg-light);
+    background: var(--bg-gray);
 }
 
 .security-content {
@@ -320,7 +341,7 @@ body {
 /* About Section */
 .about {
     padding: 6rem 0;
-    background: var(--bg-white);
+    background: var(--bg-darker);
 }
 
 .about h2 {
@@ -361,7 +382,7 @@ body {
 .stat {
     text-align: center;
     padding: 1.5rem;
-    background: var(--bg-light);
+    background: var(--bg-white);
     border-radius: 8px;
 }
 
@@ -380,8 +401,13 @@ body {
 /* Contact Section */
 .contact {
     padding: 6rem 0;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    color: white;
+    background: var(--bg-light);
+    color: var(--text-dark);
+}
+
+.contact h2,
+.contact p {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .contact-content {
@@ -414,6 +440,18 @@ body {
     gap: 1.25rem;
 }
 
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-field label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-medium);
+}
+
 .contact-form input,
 .contact-form textarea {
     padding: 1rem 1.25rem;
@@ -422,6 +460,7 @@ body {
     font-family: var(--font-sans);
     font-size: 1rem;
     background: rgba(255, 255, 255, 0.95);
+    color: var(--bg-darker);
     transition: all 0.3s ease;
 }
 
@@ -429,7 +468,12 @@ body {
 .contact-form textarea:focus {
     outline: none;
     background: white;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #666;
 }
 
 .contact-form textarea {
@@ -438,20 +482,23 @@ body {
 
 .contact-form button {
     margin-top: 1rem;
-    background: white;
-    color: var(--primary-color);
+    background: var(--primary-color);
+    color: #1A1A1A;
+    font-weight: 600;
 }
 
 .contact-form button:hover {
-    background: var(--bg-lighter);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: var(--primary-dark);
+    color: #1A1A1A;
+    box-shadow: 0 8px 20px rgba(17, 226, 18, 0.4);
 }
 
 /* Footer */
 footer {
-    background: var(--text-dark);
+    background: var(--bg-darker);
     color: white;
     padding: 4rem 0 2rem;
+    border-top: 1px solid var(--border-color);
 }
 
 .footer-content {
@@ -462,8 +509,11 @@ footer {
 }
 
 .footer-brand .logo {
-    color: white;
     margin-bottom: 1rem;
+}
+
+.footer-brand .logo-text {
+    color: white;
 }
 
 .footer-brand p {
@@ -583,12 +633,75 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    /* Mobile navigation */
     .nav-links {
         display: none;
     }
+
+    .nav-links.mobile-hidden {
+        display: none;
+    }
+
+    .nav-links.mobile-visible {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--bg-darker);
+        padding: 1rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        gap: 1rem;
+        z-index: 1000;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: var(--text-light);
+        cursor: pointer;
+        padding: 0.5rem;
+        line-height: 1;
+    }
+
+    .mobile-menu-toggle:hover {
+        color: var(--primary-green);
+    }
+}
+
+/* Accessibility - Screen Reader Only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
 
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }

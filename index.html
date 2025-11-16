@@ -3,22 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Network-isolated AI for healthcare workflow management. On-premise patient workflow automation that keeps your data secure within your facility. HIPAA-compliant, air-gapped deployment.">
+    <meta name="theme-color" content="#0a0a0a">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hapsen.tech/">
+    <meta property="og:title" content="hapsen - Healthcare AI that stays on-site">
+    <meta property="og:description" content="Network-isolated artificial intelligence for patient workflow management. Your data never leaves your facility.">
+    <meta property="og:image" content="https://hapsen.tech/hapsen_logo_shape_only.svg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://hapsen.tech/">
+    <meta name="twitter:title" content="hapsen - Healthcare AI that stays on-site">
+    <meta name="twitter:description" content="Network-isolated artificial intelligence for patient workflow management. Your data never leaves your facility.">
+    <meta name="twitter:image" content="https://hapsen.tech/hapsen_logo_shape_only.svg">
+
     <title>hapsen - AI-Powered Patient Workflow Management</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.svg">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="container">
-                <div class="logo">hapsen</div>
+                <div class="logo">
+                    <img src="hapsen_logo_shape_only.svg" alt="Hapsen" class="logo-icon" width="40" height="40">
+                    <span class="logo-text">hapsen</span>
+                </div>
                 <ul class="nav-links">
                     <li><a href="#features" data-i18n="nav.features">Features</a></li>
                     <li><a href="#security" data-i18n="nav.security">Security</a></li>
                     <li><a href="#about" data-i18n="nav.about">About</a></li>
                     <li><a href="#contact" class="cta-button" data-i18n="nav.getStarted">Get Started</a></li>
                     <li class="language-switcher">
-                        <button id="languageToggle" class="language-button">
-                            <span class="current-lang">EN</span>
+                        <button id="languageToggle" class="language-button" aria-label="Switch language" aria-haspopup="false">
+                            <span class="current-lang" aria-hidden="true">EN</span>
                         </button>
                     </li>
                 </ul>
@@ -41,7 +68,7 @@
                 <div class="hero-image">
                     <!-- Image source: https://unsplash.com/photos/a-doctor-checking-the-blood-of-a-patient-7uSvaBY69d0 -->
                     <!-- Photo by National Cancer Institute on Unsplash - Free to use under Unsplash License -->
-                    <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?auto=format&fit=crop&w=1200&q=80" alt="Healthcare professionals collaborating">
+                    <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?auto=format&fit=crop&w=1200&q=80" alt="Healthcare professionals collaborating with patient in modern medical facility" width="1200" height="800">
                 </div>
             </div>
         </section>
@@ -52,32 +79,32 @@
                 <h2 data-i18n="features.title">Built for modern healthcare workflows</h2>
                 <div class="features-grid">
                     <div class="feature-card">
-                        <div class="feature-icon">🔒</div>
+                        <div class="feature-icon" role="img" aria-label="Lock icon representing security">🔒</div>
                         <h3 data-i18n="features.card1.title">Network Isolated</h3>
                         <p data-i18n="features.card1.description">Complete air-gapped deployment. Your patient data stays within your infrastructure, ensuring maximum privacy and compliance.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">⚡</div>
+                        <div class="feature-icon" role="img" aria-label="Lightning bolt icon representing speed">⚡</div>
                         <h3 data-i18n="features.card2.title">Workflow Automation</h3>
                         <p data-i18n="features.card2.description">Streamline patient intake, scheduling, documentation, and procedural tasks with intelligent automation.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🏥</div>
+                        <div class="feature-icon" role="img" aria-label="Hospital icon representing on-site healthcare">🏥</div>
                         <h3 data-i18n="features.card3.title">On-Site AI</h3>
                         <p data-i18n="features.card3.description">State-of-the-art AI models deployed directly on your premises. No cloud dependencies, no data transmission.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">📋</div>
+                        <div class="feature-icon" role="img" aria-label="Clipboard icon representing procedural tasks">📋</div>
                         <h3 data-i18n="features.card4.title">Procedural Excellence</h3>
                         <p data-i18n="features.card4.description">Guide clinical teams through complex procedures with intelligent checklists and real-time decision support.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🔄</div>
+                        <div class="feature-icon" role="img" aria-label="Sync arrows icon representing integration">🔄</div>
                         <h3 data-i18n="features.card5.title">Seamless Integration</h3>
                         <p data-i18n="features.card5.description">Works with your existing EHR and healthcare systems without disrupting current workflows.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🛡️</div>
+                        <div class="feature-icon" role="img" aria-label="Shield icon representing privacy protection">🛡️</div>
                         <h3 data-i18n="features.card6.title">Privacy by Design</h3>
                         <p data-i18n="features.card6.description">Built with healthcare data privacy requirements in mind. Your infrastructure, your control, your compliance path.</p>
                     </div>
@@ -94,14 +121,14 @@
                         <p data-i18n="security.description">Traditional healthcare AI solutions require sending sensitive patient data to the cloud. Hapsen is different.</p>
                         <ul class="security-list">
                             <li>
-                                <span class="check">✓</span>
+                                <span class="check" role="img" aria-label="Checkmark">✓</span>
                                 <div>
                                     <strong data-i18n="security.item1.title">Zero external connectivity</strong>
                                     <p data-i18n="security.item1.description">AI models run entirely within your network perimeter</p>
                                 </div>
                             </li>
                             <li>
-                                <span class="check">✓</span>
+                                <span class="check" role="img" aria-label="Checkmark">✓</span>
                                 <div>
                                     <strong data-i18n="security.item2.title">On-premise deployment</strong>
                                     <p data-i18n="security.item2.description">Full control over your infrastructure and data</p>
@@ -112,7 +139,7 @@
                     <div class="security-image">
                         <!-- Image source: https://unsplash.com/photos/black-and-gray-laptop-computer-turned-on-FXFz-sW0uwo -->
                         <!-- Photo by Domenico Loia on Unsplash - Free to use under Unsplash License -->
-                        <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=800&q=80" alt="Secure technology infrastructure">
+                        <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=800&q=80" alt="Secure technology infrastructure with encrypted data visualization" width="800" height="600" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -126,7 +153,7 @@
                     <div class="about-image">
                         <!-- Image source: https://unsplash.com/photos/people-in-white-shirt-holding-clear-drinking-glasses-701-FJcjLAQ -->
                         <!-- Photo by National Cancer Institute on Unsplash - Free to use under Unsplash License -->
-                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80" alt="Healthcare professional using technology">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80" alt="Healthcare professional using modern technology for patient care" width="800" height="600" loading="lazy">
                     </div>
                     <div class="about-text">
                         <p data-i18n="about.paragraph1">Healthcare providers face increasing administrative burden, complex workflows, and stringent data privacy requirements. Hapsen bridges the gap between cutting-edge AI capabilities and the unique security needs of healthcare.</p>
@@ -142,16 +169,32 @@
                 <div class="contact-content">
                     <h2 data-i18n="contact.title">Ready to transform your workflows?</h2>
                     <p data-i18n="contact.description">Schedule a demo to see how Hapsen can streamline your healthcare operations while keeping your data secure.</p>
+                    <div id="formStatus" class="sr-only" aria-live="polite" aria-atomic="true"></div>
                     <form class="contact-form" id="contactForm" action="https://formspree.io/f/mzzknvgr" method="POST">
                         <div class="form-row">
-                            <input name="name" type="text" data-i18n-placeholder="contact.form.name" placeholder="Name" required>
-                            <input name="email" type="email" data-i18n-placeholder="contact.form.email" placeholder="Email" required>
+                            <div class="form-field">
+                                <label for="contact-name" data-i18n="contact.form.name">Name</label>
+                                <input id="contact-name" name="name" type="text" data-i18n-placeholder="contact.form.name" placeholder="Name" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="contact-email" data-i18n="contact.form.email">Email</label>
+                                <input id="contact-email" name="email" type="email" data-i18n-placeholder="contact.form.email" placeholder="Email" required>
+                            </div>
                         </div>
                         <div class="form-row">
-                            <input name="organization" type="text" data-i18n-placeholder="contact.form.organization" placeholder="Organization" required>
-                            <input name="phone" type="tel" data-i18n-placeholder="contact.form.phone" placeholder="Phone">
+                            <div class="form-field">
+                                <label for="contact-organization" data-i18n="contact.form.organization">Organization</label>
+                                <input id="contact-organization" name="organization" type="text" data-i18n-placeholder="contact.form.organization" placeholder="Organization" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="contact-phone" data-i18n="contact.form.phone">Phone</label>
+                                <input id="contact-phone" name="phone" type="tel" data-i18n-placeholder="contact.form.phone" placeholder="Phone">
+                            </div>
                         </div>
-                        <textarea name="message" data-i18n-placeholder="contact.form.message" placeholder="Tell us about your needs" rows="4"></textarea>
+                        <div class="form-field">
+                            <label for="contact-message" data-i18n="contact.form.message">Tell us about your needs</label>
+                            <textarea id="contact-message" name="message" data-i18n-placeholder="contact.form.message" placeholder="Tell us about your needs" rows="4"></textarea>
+                        </div>
                         <button type="submit" class="primary-button" data-i18n="contact.form.submit">Request Demo</button>
                     </form>
                 </div>
@@ -163,7 +206,10 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <div class="logo">hapsen</div>
+                    <div class="logo">
+                        <img src="hapsen_logo_shape_only.svg" alt="Hapsen" class="logo-icon" width="40" height="40">
+                        <span class="logo-text">hapsen</span>
+                    </div>
                     <p data-i18n="footer.tagline">AI-powered healthcare workflow management</p>
                 </div>
                 <div class="footer-links">
@@ -185,7 +231,7 @@
         </div>
     </footer>
 
-    <script src="translations.js"></script>
-    <script src="script.js"></script>
+    <script src="translations.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

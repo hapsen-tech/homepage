@@ -66,7 +66,11 @@ const translations = {
                 organization: "Organization",
                 phone: "Phone",
                 message: "Tell us about your needs",
-                submit: "Request Demo"
+                submit: "Request Demo",
+                sending: "Sending...",
+                success: "Demo Request Sent!",
+                error: "Oops! There was a problem submitting your form",
+                networkError: "Network error. Please try again."
             }
         },
         footer: {
@@ -143,7 +147,11 @@ const translations = {
                 organization: "조직",
                 phone: "전화번호",
                 message: "귀하의 요구사항을 알려주세요",
-                submit: "데모 요청"
+                submit: "데모 요청",
+                sending: "전송 중...",
+                success: "데모 요청이 전송되었습니다!",
+                error: "양식 제출에 문제가 발생했습니다",
+                networkError: "네트워크 오류가 발생했습니다. 다시 시도해주세요."
             }
         },
         footer: {
