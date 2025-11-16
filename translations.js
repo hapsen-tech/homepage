@@ -242,5 +242,86 @@ const translations = {
             getInTouch: "お問い合わせ",
             copyright: "© 2025 Hapsen. All rights reserved."
         }
+    },
+    zh: {
+        nav: {
+            features: "功能",
+            security: "安全",
+            about: "关于",
+            getStarted: "开始使用"
+        },
+        hero: {
+            title: "本地部署的医疗AI",
+            subtitle: "用于患者工作流程管理和程序任务的网络隔离人工智能。您的数据永不离开您的设施。",
+            requestDemo: "申请演示",
+            learnMore: "了解更多"
+        },
+        features: {
+            title: "为现代医疗工作流程而构建",
+            card1: {
+                title: "网络隔离",
+                description: "完全气隙部署。您的患者数据保留在您的基础设施内，确保最大程度的隐私和合规性。"
+            },
+            card2: {
+                title: "工作流程自动化",
+                description: "通过智能自动化简化患者接待、排程、文档编制和程序任务。"
+            },
+            card3: {
+                title: "本地AI",
+                description: "直接部署在您的设施中的最先进AI模型。无云依赖，无数据传输。"
+            },
+            card4: {
+                title: "程序卓越性",
+                description: "通过智能检查清单和实时决策支持引导临床团队完成复杂程序。"
+            },
+            card5: {
+                title: "无缝集成",
+                description: "与您现有的电子健康记录和医疗系统配合使用，不会干扰当前工作流程。"
+            },
+            card6: {
+                title: "隐私设计",
+                description: "在构建时就考虑了医疗数据隐私要求。您的基础设施，您的控制，您的合规路径。"
+            }
+        },
+        security: {
+            title: "您的数据属于您",
+            description: "传统的医疗AI解决方案需要将敏感的患者数据发送到云端。Hapsen不同。",
+            item1: {
+                title: "零外部连接",
+                description: "AI模型完全在您的网络边界内运行"
+            },
+            item2: {
+                title: "本地部署",
+                description: "完全控制您的基础设施和数据"
+            }
+        },
+        about: {
+            title: "转变医疗运营",
+            paragraph1: "医疗服务提供者面临着日益增加的行政负担、复杂的工作流程和严格的数据隐私要求。Hapsen弥合了尖端AI能力与医疗独特安全需求之间的差距。",
+            paragraph2: "我们的网络隔离AI平台使临床团队能够专注于患者护理，同时自动化日常工作流程、减少错误并保持完全的数据主权。"
+        },
+        contact: {
+            title: "准备好转变您的工作流程了吗？",
+            description: "安排演示，了解Hapsen如何简化您的医疗运营同时保护您的数据安全。",
+            form: {
+                name: "姓名",
+                email: "电子邮件",
+                organization: "组织",
+                phone: "电话",
+                message: "告诉我们您的需求",
+                submit: "申请演示",
+                sending: "发送中...",
+                success: "演示申请已发送！",
+                error: "提交表单时出现问题",
+                networkError: "网络错误。请重试。"
+            }
+        },
+        footer: {
+            tagline: "AI驱动的医疗工作流程管理",
+            product: "产品",
+            contact: "联系",
+            getInTouch: "联系我们",
+            copyright: "© 2025 Hapsen. 保留所有权利。"
+        }
     }
 };
