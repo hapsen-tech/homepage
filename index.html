@@ -28,6 +28,84 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon.svg">
 
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://hapsen.tech/#organization",
+                "name": "Hapsen",
+                "url": "https://hapsen.tech/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://hapsen.tech/hapsen_logo_shape_only.svg",
+                    "width": 1200,
+                    "height": 1200
+                },
+                "description": "Network-isolated AI for healthcare workflow management. On-premise patient workflow automation that keeps your data secure within your facility.",
+                "foundingDate": "2024",
+                "slogan": "Healthcare AI that stays on-site",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "Sales",
+                    "url": "https://hapsen.tech/#contact",
+                    "availableLanguage": ["en", "ko"]
+                }
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://hapsen.tech/#website",
+                "url": "https://hapsen.tech/",
+                "name": "Hapsen - Healthcare AI Workflow Management",
+                "description": "Network-isolated artificial intelligence for patient workflow management and procedural tasks. Your data never leaves your facility.",
+                "publisher": {
+                    "@id": "https://hapsen.tech/#organization"
+                },
+                "inLanguage": ["en", "ko"]
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://hapsen.tech/#webpage",
+                "url": "https://hapsen.tech/",
+                "name": "hapsen - AI-Powered Patient Workflow Management",
+                "isPartOf": {
+                    "@id": "https://hapsen.tech/#website"
+                },
+                "about": {
+                    "@id": "https://hapsen.tech/#organization"
+                },
+                "description": "Network-isolated AI for healthcare workflow management. On-premise patient workflow automation that keeps your data secure within your facility. HIPAA-compliant, air-gapped deployment.",
+                "inLanguage": "en"
+            },
+            {
+                "@type": "SoftwareApplication",
+                "@id": "https://hapsen.tech/#software",
+                "name": "Hapsen AI Platform",
+                "applicationCategory": "HealthApplication",
+                "operatingSystem": "On-Premise",
+                "offers": {
+                    "@type": "Offer",
+                    "availability": "https://schema.org/PreOrder",
+                    "url": "https://hapsen.tech/#contact"
+                },
+                "description": "Network-isolated artificial intelligence for patient workflow management and procedural tasks. Complete air-gapped deployment with on-premise AI models.",
+                "featureList": [
+                    "Network Isolated - Air-gapped deployment",
+                    "Workflow Automation - Patient intake and scheduling",
+                    "On-Site AI - No cloud dependencies",
+                    "Procedural Excellence - Intelligent checklists",
+                    "Seamless Integration - Works with existing EHR",
+                    "Privacy by Design - HIPAA compliant"
+                ],
+                "releaseNotes": "Network-isolated AI platform for healthcare workflow management",
+                "screenshot": "https://hapsen.tech/hero-image.jpg"
+            }
+        ]
+    }
+    </script>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
