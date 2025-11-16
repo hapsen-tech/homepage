@@ -54,11 +54,16 @@ Your site will be live at `https://[username].github.io/[repository-name]/`
 
 ## Internationalization
 
-The site automatically detects the user's browser language:
-- Korean browsers (`ko-*`) → Korean by default
-- All others → English by default
+The site supports 7 languages with automatic browser language detection:
+- **English** (`en`) - Default
+- **Korean** (`ko`)
+- **Japanese** (`ja`)
+- **Chinese Simplified** (`zh`)
+- **Spanish** (`es`)
+- **Arabic** (`ar`) - RTL layout supported
+- **Portuguese** (`pt`)
 
-Users can manually toggle languages using the button in the top-right navigation bar. Language preference is saved in `localStorage`.
+The site automatically detects the user's browser language and displays the appropriate translation. Users can manually cycle through all languages using the button in the top-right navigation bar. Language preference is saved in `localStorage`.
 
 ### Adding More Languages
 
