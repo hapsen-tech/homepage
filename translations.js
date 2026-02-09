@@ -3,63 +3,55 @@ const translations = {
     en: {
         nav: {
             features: "Features",
-            whyHapsen: "Why Hapsen",
+            whyHapsen: "Why VizPlan",
             about: "About",
             getStarted: "Get Started"
         },
         hero: {
-            title: "Project management with context built in",
-            subtitle: "Chat, goals, and work in one place. See how everything connects across your organization. Plug in your favorite AI via MCP.",
+            title: "Advance goals, not busywork",
+            subtitle: "VizPlan, by Hapsen, aligns every task to your company's goals, surfaces risks automatically, and integrates with your existing tools and AI.",
             requestDemo: "Request a Demo",
             learnMore: "Learn More"
         },
         features: {
-            title: "Everything you need in one place",
+            title: "What VizPlan does",
             card1: {
-                title: "Integrated Chat",
-                description: "Conversations happen where the work happens. Full context without jumping between tools or losing track of decisions."
+                title: "Goal-to-Task Alignment",
+                description: "From company goals to individual tasks. Every piece of work traces back to a strategic objective, ensuring nothing drifts off course."
             },
             card2: {
-                title: "Unified Dashboards",
-                description: "Roll up work across teams and organization levels. See progress, blockers, and priorities at every level."
+                title: "Intelligent Work Detection",
+                description: "Automatically identifies duplicate efforts and connects employees working on related tasks across teams, saving time and sharing knowledge."
             },
             card3: {
-                title: "Goals & Work United",
-                description: "OKRs and tasks in one place, directly connected. No more separate systems—see how daily work drives strategic goals."
+                title: "Leader Dashboard",
+                description: "At-risk and blocked work is surfaced automatically. Progress and status are calculated from real signals — no more status meetings to figure out where things stand."
             },
             card4: {
-                title: "AI-Enabled via MCP",
-                description: "Plug in your favorite AI tool through our MCP integration. Automate workflows, get insights, and work smarter."
-            },
-            card5: {
-                title: "Custom Views",
-                description: "Kanban, list, timeline, calendar—view your work the way that makes sense for you and your team."
-            },
-            card6: {
-                title: "Cross-Org Visibility",
-                description: "See how work correlates up and down the organization. Dependencies, rollups, and alignment in one view."
+                title: "Bring Your Own AI",
+                description: "Integrate your own AI tools to maintain your company's context. VizPlan also syncs with existing project management systems via two-way integrations."
             }
         },
         whyHapsen: {
-            title: "Why Hapsen?",
-            description: "Most project management tools force you to choose: context or structure. Chat lives in one app, tasks in another, goals in a spreadsheet. Hapsen brings it all together.",
+            title: "Why VizPlan?",
+            description: "Companies set annual goals, then daily work drifts away from them. Leaders waste time chasing status updates. Teams duplicate work without knowing it. Hapsen built VizPlan to fix this.",
             item1: {
-                title: "One place for everything",
-                description: "Chat, tasks, goals, and dashboards—no more context switching between tools"
+                title: "Every task advances a goal",
+                description: "Work is structured from company goals down to individual tasks, so nothing falls through the cracks"
             },
             item2: {
-                title: "Goals connected to work",
-                description: "See exactly how daily tasks roll up to strategic objectives across your organization"
+                title: "Leaders see what matters",
+                description: "At-risk work, blocked items, and duplicate efforts are surfaced automatically — no more status meetings"
             }
         },
         about: {
-            title: "Built for how teams actually work",
-            paragraph1: "Teams are drowning in tools. Chat here, tasks there, goals somewhere else, and endless status meetings to keep everyone aligned. Information gets lost, context disappears, and work happens in silos.",
-            paragraph2: "Hapsen unifies communication, project management, and goal tracking in one platform. With built-in AI via MCP, teams can automate routine work, surface insights, and focus on what matters—shipping great work together."
+            title: "Work worth waking up for",
+            paragraph1: "Hapsen was founded by people who'd seen enough — talented teams burning out under poor leadership, success measured only in lines on a chart, and workplaces that forgot they're made of real humans. Our founders come from global enterprises, unicorn startups, and solo ventures, united by one conviction: huge success doesn't have to come at the cost of people's happiness.",
+            paragraph2: "We believe a company is a collection of people coming together to make something about the world better. Profit is proof of value, not the purpose. We practice profit sharing, give every employee a voice, and hold ourselves to a standard of excellence that energizes rather than exhausts. We build tools to help organizations work the way they should — and VizPlan is where we started."
         },
         contact: {
-            title: "Ready to work better together?",
-            description: "Schedule a demo to see how Hapsen brings chat, goals, and work into one connected platform.",
+            title: "Ready to align your team?",
+            description: "Schedule a demo to see how VizPlan ensures every piece of work advances your company's goals.",
             form: {
                 name: "Name",
                 email: "Email",
@@ -74,73 +66,65 @@ const translations = {
             }
         },
         footer: {
-            tagline: "AI-enabled project management",
+            tagline: "Makers of VizPlan",
             product: "Product",
             contact: "Contact",
             getInTouch: "Get in Touch",
-            copyright: "© 2025 Hapsen. All rights reserved."
+            copyright: "© 2026 Hapsen. All rights reserved."
         }
     },
     ko: {
         nav: {
             features: "기능",
-            whyHapsen: "왜 Hapsen인가",
+            whyHapsen: "왜 VizPlan인가",
             about: "소개",
             getStarted: "시작하기"
         },
         hero: {
-            title: "맥락이 내장된 프로젝트 관리",
-            subtitle: "채팅, 목표, 업무를 한 곳에서. 조직 전체가 어떻게 연결되는지 확인하세요. MCP를 통해 선호하는 AI를 연결하세요.",
+            title: "목표를 전진시키세요, 헛수고 말고",
+            subtitle: "Hapsen의 VizPlan은 모든 업무를 회사 목표에 맞추고, 리스크를 자동으로 표면화하며, 기존 도구 및 AI와 통합됩니다.",
             requestDemo: "데모 요청",
             learnMore: "자세히 알아보기"
         },
         features: {
-            title: "필요한 모든 것을 한 곳에서",
+            title: "VizPlan이 하는 일",
             card1: {
-                title: "통합 채팅",
-                description: "대화는 업무가 일어나는 곳에서 이루어집니다. 도구 간 전환이나 결정 추적 없이 완전한 맥락을 유지하세요."
+                title: "목표-업무 정렬",
+                description: "회사 목표에서 개인 업무까지, 모든 작업이 전략 목표로 추적되어 방향을 잃지 않습니다."
             },
             card2: {
-                title: "통합 대시보드",
-                description: "팀과 조직 전체의 업무를 롤업하세요. 모든 수준에서 진행 상황, 장애물, 우선순위를 확인하세요."
+                title: "지능형 업무 탐지",
+                description: "중복 작업을 자동으로 식별하고, 팀 간 관련 업무를 수행하는 직원들을 연결하여 시간을 절약하고 지식을 공유합니다."
             },
             card3: {
-                title: "목표와 업무의 통합",
-                description: "OKR과 작업을 한 곳에서 직접 연결하세요. 별도의 시스템 없이 일상 업무가 전략적 목표를 어떻게 달성하는지 확인하세요."
+                title: "리더 대시보드",
+                description: "위험 및 차단된 업무가 자동으로 표면화됩니다. 진행 상황과 상태는 실제 신호에서 계산됩니다 — 상황 파악을 위한 상태 회의가 더 이상 필요 없습니다."
             },
             card4: {
-                title: "MCP를 통한 AI 지원",
-                description: "MCP 통합을 통해 선호하는 AI 도구를 연결하세요. 워크플로를 자동화하고, 인사이트를 얻고, 더 스마트하게 일하세요."
-            },
-            card5: {
-                title: "맞춤형 뷰",
-                description: "칸반, 리스트, 타임라인, 캘린더—당신과 팀에게 맞는 방식으로 업무를 확인하세요."
-            },
-            card6: {
-                title: "조직 전체 가시성",
-                description: "조직 전체에서 업무가 어떻게 연결되는지 확인하세요. 의존성, 롤업, 정렬을 한눈에 볼 수 있습니다."
+                title: "나만의 AI 연결",
+                description: "자체 AI 도구를 연결하여 회사의 맥락을 유지하세요. VizPlan은 양방향 통합을 통해 기존 프로젝트 관리 시스템과도 동기화됩니다."
             }
         },
         whyHapsen: {
-            title: "왜 Hapsen인가?",
-            description: "대부분의 프로젝트 관리 도구는 맥락 또는 구조 중 하나를 선택하도록 강요합니다. 채팅은 한 앱에, 작업은 다른 앱에, 목표는 스프레드시트에 있습니다. Hapsen은 모든 것을 하나로 통합합니다.",
+            title: "왜 VizPlan인가?",
+            description: "기업은 연간 목표를 세우지만, 일상 업무는 그 목표에서 멀어집니다. 리더는 상태 업데이트를 쫓느라 시간을 낭비합니다. 팀은 서로 모른 채 중복 작업을 합니다. Hapsen은 이를 해결하기 위해 VizPlan을 만들었습니다.",
             item1: {
-                title: "모든 것을 한 곳에서",
-                description: "채팅, 작업, 목표, 대시보드—더 이상 도구 간 컨텍스트 전환이 필요 없습니다"
+                title: "모든 업무가 목표를 전진시킵니다",
+                description: "회사 목표에서 개인 업무까지 체계적으로 구성되어 어떤 것도 놓치지 않습니다"
             },
             item2: {
-                title: "업무와 연결된 목표",
-                description: "일상 업무가 조직 전체의 전략적 목표에 어떻게 기여하는지 정확히 확인하세요"
+                title: "리더는 중요한 것을 봅니다",
+                description: "위험 업무, 차단된 항목, 중복 작업이 자동으로 표면화됩니다 — 상태 회의가 더 이상 필요 없습니다"
             }
         },
         about: {
-            title: "팀이 실제로 일하는 방식에 맞게 구축",
-            paragraph1: "팀은 도구의 홍수에 빠져 있습니다. 채팅은 여기, 작업은 저기, 목표는 다른 곳에, 그리고 모두를 정렬하기 위한 끝없는 상태 회의. 정보는 사라지고, 맥락은 없어지고, 업무는 사일로에서 이루어집니다.",
-            paragraph2: "Hapsen은 커뮤니케이션, 프로젝트 관리, 목표 추적을 하나의 플랫폼에 통합합니다. MCP를 통한 내장 AI로 팀은 일상적인 작업을 자동화하고, 인사이트를 발굴하며, 중요한 것에 집중할 수 있습니다—함께 훌륭한 결과물을 만들어내는 것."
+            title: "아침이 기다려지는 일",
+            paragraph1: "Hapsen은 충분히 목격한 사람들이 세운 회사입니다 — 형편없는 리더십 아래 번아웃되는 유능한 팀들, 차트 위의 선으로만 측정되는 성과, 그리고 구성원이 살아 있는 사람이라는 사실을 잊어버린 직장들. 우리 창업자들은 글로벌 대기업, 유니콘 스타트업, 1인 벤처까지 다양한 배경에서 왔지만 하나의 신념으로 뭉쳤습니다. 엄청난 성공이 반드시 구성원의 행복을 희생시킬 필요는 없다는 것.",
+            paragraph2: "우리는 회사란 세상의 무언가를 더 낫게 만들기 위해 모인 사람들의 집합이라고 믿습니다. 이익은 가치의 증거이지, 존재의 목적이 아닙니다. 우리는 이익 공유를 실천하고, 모든 구성원에게 목소리를 부여하며, 사람을 지치게 하는 것이 아니라 에너지를 주는 탁월함의 기준을 스스로에게 적용합니다. 우리는 조직이 마땅히 일해야 할 방식으로 일할 수 있도록 돕는 도구를 만듭니다 — 그 시작이 VizPlan입니다."
         },
         contact: {
-            title: "더 나은 협업을 시작할 준비가 되셨나요?",
-            description: "Hapsen이 채팅, 목표, 업무를 하나의 연결된 플랫폼으로 어떻게 통합하는지 데모를 예약하세요.",
+            title: "팀을 정렬할 준비가 되셨나요?",
+            description: "VizPlan이 모든 업무가 회사 목표를 달성하도록 어떻게 보장하는지 데모를 예약하세요.",
             form: {
                 name: "이름",
                 email: "이메일",
@@ -155,73 +139,65 @@ const translations = {
             }
         },
         footer: {
-            tagline: "AI 기반 프로젝트 관리",
+            tagline: "VizPlan의 제작사",
             product: "제품",
             contact: "연락처",
             getInTouch: "문의하기",
-            copyright: "© 2025 Hapsen. 모든 권리 보유."
+            copyright: "© 2026 Hapsen. 모든 권리 보유."
         }
     },
     ja: {
         nav: {
             features: "機能",
-            whyHapsen: "なぜHapsen",
+            whyHapsen: "なぜVizPlan",
             about: "について",
             getStarted: "始める"
         },
         hero: {
-            title: "コンテキストが組み込まれたプロジェクト管理",
-            subtitle: "チャット、目標、作業を一箇所に。組織全体がどのようにつながっているかを確認。MCPを通じてお気に入りのAIを接続。",
+            title: "目標を前進させよう、無駄な作業ではなく",
+            subtitle: "HapsenのVizPlanはすべてのタスクを会社の目標に整合させ、リスクを自動的に可視化し、既存のツールやAIと統合します。",
             requestDemo: "デモをリクエスト",
             learnMore: "詳細を見る"
         },
         features: {
-            title: "必要なものすべてを一箇所に",
+            title: "VizPlanにできること",
             card1: {
-                title: "統合チャット",
-                description: "会話は作業が行われる場所で。ツール間を行き来することなく、完全なコンテキストを維持します。"
+                title: "目標からタスクへの整合",
+                description: "会社の目標から個人のタスクまで、すべての作業が戦略目標に紐づき、方向性がずれることがありません。"
             },
             card2: {
-                title: "統合ダッシュボード",
-                description: "チームと組織全体の作業をロールアップ。すべてのレベルで進捗、障害、優先事項を確認。"
+                title: "インテリジェントな作業検出",
+                description: "重複作業を自動的に特定し、チーム横断で関連タスクに取り組む社員同士をつなげ、時間を節約し知識を共有します。"
             },
             card3: {
-                title: "目標と作業の統合",
-                description: "OKRとタスクを一箇所で直接接続。別々のシステムは不要—日々の作業が戦略目標をどう推進するか確認。"
+                title: "リーダーダッシュボード",
+                description: "リスクのある作業やブロックされた作業が自動的に可視化されます。進捗とステータスは実際のシグナルから算出 — 状況把握のためのステータス会議は不要です。"
             },
             card4: {
-                title: "MCP経由のAI対応",
-                description: "MCP統合を通じてお気に入りのAIツールを接続。ワークフローを自動化し、インサイトを得て、よりスマートに働く。"
-            },
-            card5: {
-                title: "カスタムビュー",
-                description: "カンバン、リスト、タイムライン、カレンダー—あなたとチームに合った方法で作業を確認。"
-            },
-            card6: {
-                title: "組織横断の可視性",
-                description: "組織全体で作業がどのように関連しているかを確認。依存関係、ロールアップ、整合性を一目で把握。"
+                title: "自分のAIを持ち込む",
+                description: "自社のAIツールを統合して会社のコンテキストを維持。VizPlanは双方向統合により既存のプロジェクト管理システムとも同期します。"
             }
         },
         whyHapsen: {
-            title: "なぜHapsenなのか？",
-            description: "ほとんどのプロジェクト管理ツールは、コンテキストか構造かの選択を強います。チャットは一つのアプリに、タスクは別のアプリに、目標はスプレッドシートに。Hapsenはすべてを一つにまとめます。",
+            title: "なぜVizPlanなのか？",
+            description: "企業は年間目標を立てますが、日々の業務はそこから離れていきます。リーダーはステータス更新を追いかけて時間を浪費します。チームは知らないうちに作業を重複しています。Hapsenはこの問題を解決するためにVizPlanを作りました。",
             item1: {
-                title: "すべてを一箇所に",
-                description: "チャット、タスク、目標、ダッシュボード—ツール間のコンテキスト切り替えは不要"
+                title: "すべてのタスクが目標を前進させる",
+                description: "会社の目標から個人のタスクまで体系的に構成。何も見落としません"
             },
             item2: {
-                title: "作業に接続された目標",
-                description: "日々のタスクが組織全体の戦略目標にどのように貢献するかを正確に確認"
+                title: "リーダーは重要なことを見る",
+                description: "リスクのある作業、ブロックされた項目、重複作業が自動的に可視化 — ステータス会議は不要です"
             }
         },
         about: {
-            title: "チームが実際に働く方法に合わせて構築",
-            paragraph1: "チームはツールの洪水に溺れています。チャットはここ、タスクはそこ、目標はどこか別の場所、そして全員を揃えるための終わりのないステータスミーティング。情報は失われ、コンテキストは消え、作業はサイロで行われます。",
-            paragraph2: "Hapsenはコミュニケーション、プロジェクト管理、目標追跡を一つのプラットフォームに統合します。MCP経由の内蔵AIにより、チームは日常作業を自動化し、インサイトを発見し、重要なことに集中できます—一緒に素晴らしい成果を出すこと。"
+            title: "目覚めるのが楽しみになる仕事",
+            paragraph1: "Hapsenは、もう十分に見てきた人たちが立ち上げた会社です — 劣悪なリーダーシップの下で燃え尽きていく優秀なチーム、チャート上の線でしか測られない成果、そして人間で構成されていることを忘れてしまった職場。私たちの創業者はグローバル企業、ユニコーンスタートアップ、個人事業までさまざまな経歴を持っていますが、一つの信念で結ばれています。大きな成功のために人の幸せを犠牲にする必要はない、ということです。",
+            paragraph2: "私たちは、会社とは世の中の何かをより良くするために集まった人々の集合体だと信じています。利益は価値の証明であり、目的そのものではありません。私たちは利益を分かち合い、すべての社員に発言の機会を与え、人を疲弊させるのではなく活力を与える卓越性の基準を自らに課しています。組織が本来あるべき姿で働けるようにするためのツールを作ること — その第一歩がVizPlanです。"
         },
         contact: {
-            title: "より良い協働を始める準備はできていますか？",
-            description: "Hapsenがチャット、目標、作業を一つの接続されたプラットフォームにどのように統合するかデモをご予約ください。",
+            title: "チームを整合させる準備はできていますか？",
+            description: "VizPlanがすべての作業を会社の目標達成にどう結びつけるか、デモをご予約ください。",
             form: {
                 name: "名前",
                 email: "メール",
@@ -236,73 +212,65 @@ const translations = {
             }
         },
         footer: {
-            tagline: "AI対応プロジェクト管理",
+            tagline: "VizPlanの開発元",
             product: "製品",
             contact: "お問い合わせ",
             getInTouch: "お問い合わせ",
-            copyright: "© 2025 Hapsen. All rights reserved."
+            copyright: "© 2026 Hapsen. All rights reserved."
         }
     },
     zh: {
         nav: {
             features: "功能",
-            whyHapsen: "为什么选择Hapsen",
+            whyHapsen: "为什么选择VizPlan",
             about: "关于",
             getStarted: "开始使用"
         },
         hero: {
-            title: "内置上下文的项目管理",
-            subtitle: "聊天、目标和工作集于一处。查看整个组织如何连接。通过MCP接入您喜欢的AI。",
+            title: "推进目标，而非瞎忙",
+            subtitle: "Hapsen推出的VizPlan将每项任务与公司目标对齐，自动发现风险，并与您现有的工具和AI集成。",
             requestDemo: "申请演示",
             learnMore: "了解更多"
         },
         features: {
-            title: "您需要的一切尽在一处",
+            title: "VizPlan的功能",
             card1: {
-                title: "集成聊天",
-                description: "对话发生在工作进行的地方。无需在工具之间切换，保持完整上下文。"
+                title: "目标到任务的对齐",
+                description: "从公司目标到个人任务，每项工作都能追溯到战略目标，确保不会偏离方向。"
             },
             card2: {
-                title: "统一仪表板",
-                description: "汇总团队和组织各级的工作。在每个层级查看进度、障碍和优先事项。"
+                title: "智能工作检测",
+                description: "自动识别重复工作，连接跨团队处理相关任务的员工，节省时间并共享知识。"
             },
             card3: {
-                title: "目标与工作统一",
-                description: "OKR和任务在一处直接关联。无需单独系统——查看日常工作如何推动战略目标。"
+                title: "领导者仪表板",
+                description: "风险和受阻工作自动浮现。进度和状态基于真实信号计算——不再需要开状态会议来了解情况。"
             },
             card4: {
-                title: "通过MCP启用AI",
-                description: "通过MCP集成接入您喜欢的AI工具。自动化工作流程，获取洞察，更智能地工作。"
-            },
-            card5: {
-                title: "自定义视图",
-                description: "看板、列表、时间线、日历——以适合您和团队的方式查看工作。"
-            },
-            card6: {
-                title: "跨组织可见性",
-                description: "查看工作在整个组织中如何关联。依赖关系、汇总和对齐一目了然。"
+                title: "自带AI",
+                description: "集成您自己的AI工具以保持公司的上下文。VizPlan还通过双向集成与现有项目管理系统同步。"
             }
         },
         whyHapsen: {
-            title: "为什么选择Hapsen？",
-            description: "大多数项目管理工具迫使您在上下文和结构之间做选择。聊天在一个应用中，任务在另一个应用中，目标在电子表格中。Hapsen将一切整合在一起。",
+            title: "为什么选择VizPlan？",
+            description: "企业设定年度目标，但日常工作却偏离了这些目标。领导者浪费时间追踪状态更新。团队在不知情的情况下重复工作。Hapsen打造了VizPlan来解决这个问题。",
             item1: {
-                title: "一切尽在一处",
-                description: "聊天、任务、目标和仪表板——不再需要在工具之间切换上下文"
+                title: "每项任务都推进目标",
+                description: "从公司目标到个人任务系统化构建，任何工作都不会遗漏"
             },
             item2: {
-                title: "目标与工作相连",
-                description: "准确查看日常任务如何汇总到整个组织的战略目标"
+                title: "领导者看到重要的事",
+                description: "风险工作、受阻项目和重复工作自动浮现——不再需要状态会议"
             }
         },
         about: {
-            title: "为团队实际工作方式而构建",
-            paragraph1: "团队正在工具的海洋中挣扎。聊天在这里，任务在那里，目标在别处，还有无尽的状态会议来保持大家同步。信息丢失，上下文消失，工作在孤岛中进行。",
-            paragraph2: "Hapsen将沟通、项目管理和目标跟踪统一在一个平台中。通过MCP内置的AI，团队可以自动化日常工作，发现洞察，专注于重要的事情——一起交付出色的成果。"
+            title: "值得每天醒来去做的工作",
+            paragraph1: "Hapsen 由一群看够了的人创立 — 优秀的团队在糟糕的领导下燃尽自己，成功仅仅用图表上的曲线来衡量，职场忘记了它是由活生生的人组成的。我们的创始人来自跨国企业、独角兽创业公司和个人创业项目，因一个共同信念走到一起：巨大的成功不必以牺牲人的幸福为代价。",
+            paragraph2: "我们相信，公司是一群人聚在一起，让这个世界的某些方面变得更好。利润是价值的证明，而非存在的目的。我们实行利润共享，赋予每位员工发言权，并以一种激发活力而非消耗精力的卓越标准要求自己。我们打造工具，帮助组织以它们应有的方式运转 — VizPlan 就是我们的起点。"
         },
         contact: {
-            title: "准备好更好地协作了吗？",
-            description: "预约演示，了解Hapsen如何将聊天、目标和工作整合到一个连接的平台中。",
+            title: "准备好对齐您的团队了吗？",
+            description: "预约演示，了解VizPlan如何确保每项工作都推进公司目标。",
             form: {
                 name: "姓名",
                 email: "电子邮件",
@@ -317,73 +285,65 @@ const translations = {
             }
         },
         footer: {
-            tagline: "AI赋能的项目管理",
+            tagline: "VizPlan的创造者",
             product: "产品",
             contact: "联系",
             getInTouch: "联系我们",
-            copyright: "© 2025 Hapsen. 保留所有权利。"
+            copyright: "© 2026 Hapsen. 保留所有权利。"
         }
     },
     "zh-TW": {
         nav: {
             features: "功能",
-            whyHapsen: "為什麼選擇Hapsen",
+            whyHapsen: "為什麼選擇VizPlan",
             about: "關於",
             getStarted: "開始使用"
         },
         hero: {
-            title: "內建脈絡的專案管理",
-            subtitle: "聊天、目標和工作集於一處。查看整個組織如何連接。透過MCP接入您喜歡的AI。",
+            title: "推進目標，而非瞎忙",
+            subtitle: "Hapsen推出的VizPlan將每項任務與公司目標對齊，自動發現風險，並與您現有的工具和AI整合。",
             requestDemo: "申請示範",
             learnMore: "了解更多"
         },
         features: {
-            title: "您需要的一切盡在一處",
+            title: "VizPlan的功能",
             card1: {
-                title: "整合聊天",
-                description: "對話發生在工作進行的地方。無需在工具之間切換，保持完整脈絡。"
+                title: "目標到任務的對齊",
+                description: "從公司目標到個人任務，每項工作都能追溯到策略目標，確保不會偏離方向。"
             },
             card2: {
-                title: "統一儀表板",
-                description: "彙總團隊和組織各級的工作。在每個層級查看進度、障礙和優先事項。"
+                title: "智慧工作偵測",
+                description: "自動識別重複工作，連接跨團隊處理相關任務的員工，節省時間並分享知識。"
             },
             card3: {
-                title: "目標與工作統一",
-                description: "OKR和任務在一處直接關聯。無需單獨系統——查看日常工作如何推動策略目標。"
+                title: "領導者儀表板",
+                description: "風險和受阻工作自動浮現。進度和狀態基於真實訊號計算——不再需要開狀態會議來了解情況。"
             },
             card4: {
-                title: "透過MCP啟用AI",
-                description: "透過MCP整合接入您喜歡的AI工具。自動化工作流程，獲取洞察，更智慧地工作。"
-            },
-            card5: {
-                title: "自訂檢視",
-                description: "看板、清單、時間軸、行事曆——以適合您和團隊的方式查看工作。"
-            },
-            card6: {
-                title: "跨組織可見性",
-                description: "查看工作在整個組織中如何關聯。依賴關係、彙總和對齊一目了然。"
+                title: "自帶AI",
+                description: "整合您自己的AI工具以保持公司的脈絡。VizPlan還透過雙向整合與現有專案管理系統同步。"
             }
         },
         whyHapsen: {
-            title: "為什麼選擇Hapsen？",
-            description: "大多數專案管理工具迫使您在脈絡和結構之間做選擇。聊天在一個應用程式中，任務在另一個應用程式中，目標在試算表中。Hapsen將一切整合在一起。",
+            title: "為什麼選擇VizPlan？",
+            description: "企業設定年度目標，但日常工作卻偏離了這些目標。領導者浪費時間追蹤狀態更新。團隊在不知情的情況下重複工作。Hapsen打造了VizPlan來解決這個問題。",
             item1: {
-                title: "一切盡在一處",
-                description: "聊天、任務、目標和儀表板——不再需要在工具之間切換脈絡"
+                title: "每項任務都推進目標",
+                description: "從公司目標到個人任務系統化構建，任何工作都不會遺漏"
             },
             item2: {
-                title: "目標與工作相連",
-                description: "準確查看日常任務如何彙總到整個組織的策略目標"
+                title: "領導者看到重要的事",
+                description: "風險工作、受阻項目和重複工作自動浮現——不再需要狀態會議"
             }
         },
         about: {
-            title: "為團隊實際工作方式而構建",
-            paragraph1: "團隊正在工具的海洋中掙扎。聊天在這裡，任務在那裡，目標在別處，還有無盡的狀態會議來保持大家同步。資訊遺失，脈絡消失，工作在孤島中進行。",
-            paragraph2: "Hapsen將溝通、專案管理和目標追蹤統一在一個平台中。透過MCP內建的AI，團隊可以自動化日常工作，發現洞察，專注於重要的事情——一起交付出色的成果。"
+            title: "值得每天醒來去做的工作",
+            paragraph1: "Hapsen 由一群看夠了的人創立 — 優秀的團隊在糟糕的領導下燃燒殆盡，成功僅用圖表上的線條來衡量，職場忘記了它是由真實的人所組成的。我們的創辦人來自跨國企業、獨角獸新創公司和個人創業，因一個共同信念走到一起：巨大的成功不必以犧牲人的幸福為代價。",
+            paragraph2: "我們相信，公司是一群人聚在一起，讓這個世界的某些面向變得更好。利潤是價值的證明，而非存在的目的。我們實行利潤共享，賦予每位員工發言權，並以一種激發活力而非消耗精力的卓越標準要求自己。我們打造工具，幫助組織以它們應有的方式運作 — VizPlan 就是我們的起點。"
         },
         contact: {
-            title: "準備好更好地協作了嗎？",
-            description: "預約示範，了解Hapsen如何將聊天、目標和工作整合到一個連接的平台中。",
+            title: "準備好對齊您的團隊了嗎？",
+            description: "預約示範，了解VizPlan如何確保每項工作都推進公司目標。",
             form: {
                 name: "姓名",
                 email: "電子郵件",
@@ -398,73 +358,65 @@ const translations = {
             }
         },
         footer: {
-            tagline: "AI賦能的專案管理",
+            tagline: "VizPlan的創造者",
             product: "產品",
             contact: "聯繫",
             getInTouch: "聯繫我們",
-            copyright: "© 2025 Hapsen. 保留所有權利。"
+            copyright: "© 2026 Hapsen. 保留所有權利。"
         }
     },
     es: {
         nav: {
             features: "Características",
-            whyHapsen: "Por qué Hapsen",
+            whyHapsen: "Por qué VizPlan",
             about: "Acerca de",
             getStarted: "Comenzar"
         },
         hero: {
-            title: "Gestión de proyectos con contexto integrado",
-            subtitle: "Chat, objetivos y trabajo en un solo lugar. Vea cómo todo se conecta en su organización. Conecte su IA favorita a través de MCP.",
+            title: "Avanza objetivos, no trabajo inútil",
+            subtitle: "VizPlan, de Hapsen, alinea cada tarea con los objetivos de tu empresa, detecta riesgos automáticamente y se integra con tus herramientas y AI existentes.",
             requestDemo: "Solicitar una Demo",
             learnMore: "Más Información"
         },
         features: {
-            title: "Todo lo que necesita en un solo lugar",
+            title: "Qué hace VizPlan",
             card1: {
-                title: "Chat Integrado",
-                description: "Las conversaciones ocurren donde ocurre el trabajo. Contexto completo sin saltar entre herramientas o perder decisiones."
+                title: "Alineación de Objetivos a Tareas",
+                description: "Desde los objetivos de la empresa hasta las tareas individuales. Cada trabajo se conecta a un objetivo estratégico, asegurando que nada se desvíe."
             },
             card2: {
-                title: "Paneles Unificados",
-                description: "Consolide el trabajo de equipos y niveles organizacionales. Vea progreso, bloqueos y prioridades en cada nivel."
+                title: "Detección Inteligente de Trabajo",
+                description: "Identifica automáticamente esfuerzos duplicados y conecta empleados que trabajan en tareas relacionadas entre equipos, ahorrando tiempo y compartiendo conocimiento."
             },
             card3: {
-                title: "Objetivos y Trabajo Unidos",
-                description: "OKRs y tareas en un solo lugar, directamente conectados. Sin sistemas separados—vea cómo el trabajo diario impulsa los objetivos estratégicos."
+                title: "Panel de Liderazgo",
+                description: "El trabajo en riesgo y bloqueado se muestra automáticamente. El progreso y el estado se calculan a partir de señales reales — no más reuniones de estado para saber cómo van las cosas."
             },
             card4: {
-                title: "IA Habilitada vía MCP",
-                description: "Conecte su herramienta de IA favorita a través de nuestra integración MCP. Automatice flujos de trabajo, obtenga insights y trabaje más inteligentemente."
-            },
-            card5: {
-                title: "Vistas Personalizadas",
-                description: "Kanban, lista, línea de tiempo, calendario—vea su trabajo de la manera que tenga sentido para usted y su equipo."
-            },
-            card6: {
-                title: "Visibilidad Inter-Organizacional",
-                description: "Vea cómo el trabajo se correlaciona en toda la organización. Dependencias, consolidaciones y alineación en una vista."
+                title: "Trae Tu Propia IA",
+                description: "Integra tus propias herramientas de IA para mantener el contexto de tu empresa. VizPlan también se sincroniza con sistemas de gestión existentes mediante integraciones bidireccionales."
             }
         },
         whyHapsen: {
-            title: "¿Por qué Hapsen?",
-            description: "La mayoría de las herramientas de gestión de proyectos le obligan a elegir: contexto o estructura. El chat vive en una app, las tareas en otra, los objetivos en una hoja de cálculo. Hapsen lo une todo.",
+            title: "¿Por qué VizPlan?",
+            description: "Las empresas establecen objetivos anuales, pero el trabajo diario se aleja de ellos. Los líderes pierden tiempo persiguiendo actualizaciones de estado. Los equipos duplican trabajo sin saberlo. Hapsen creó VizPlan para solucionar esto.",
             item1: {
-                title: "Todo en un solo lugar",
-                description: "Chat, tareas, objetivos y paneles—sin más cambio de contexto entre herramientas"
+                title: "Cada tarea avanza un objetivo",
+                description: "El trabajo se estructura desde los objetivos de la empresa hasta las tareas individuales, nada se escapa"
             },
             item2: {
-                title: "Objetivos conectados al trabajo",
-                description: "Vea exactamente cómo las tareas diarias se consolidan hacia los objetivos estratégicos de la organización"
+                title: "Los líderes ven lo que importa",
+                description: "El trabajo en riesgo, los elementos bloqueados y los esfuerzos duplicados se muestran automáticamente — no más reuniones de estado"
             }
         },
         about: {
-            title: "Construido para cómo los equipos realmente trabajan",
-            paragraph1: "Los equipos se ahogan en herramientas. Chat aquí, tareas allá, objetivos en otro lugar, y reuniones de estado interminables para mantener a todos alineados. La información se pierde, el contexto desaparece y el trabajo ocurre en silos.",
-            paragraph2: "Hapsen unifica comunicación, gestión de proyectos y seguimiento de objetivos en una plataforma. Con IA integrada vía MCP, los equipos pueden automatizar trabajo rutinario, descubrir insights y enfocarse en lo que importa—entregar gran trabajo juntos."
+            title: "Un trabajo por el que vale la pena despertar",
+            paragraph1: "Hapsen fue fundada por personas que ya habían visto suficiente — equipos talentosos agotándose bajo un liderazgo mediocre, el éxito medido solo por líneas en una gráfica y lugares de trabajo que olvidaron que están hechos de personas reales. Nuestros fundadores vienen de empresas globales, startups unicornio y emprendimientos individuales, unidos por una convicción: el gran éxito no tiene que costar la felicidad de las personas.",
+            paragraph2: "Creemos que una empresa es un grupo de personas que se unen para mejorar algo en el mundo. Las ganancias son la prueba de que se genera valor, no el propósito en sí. Practicamos el reparto de beneficios, damos voz a cada empleado y nos exigimos un estándar de excelencia que energiza en lugar de agotar. Creamos herramientas para ayudar a las organizaciones a trabajar como deberían — y VizPlan fue donde empezamos."
         },
         contact: {
-            title: "¿Listo para trabajar mejor juntos?",
-            description: "Programe una demo para ver cómo Hapsen integra chat, objetivos y trabajo en una plataforma conectada.",
+            title: "¿Listo para alinear a tu equipo?",
+            description: "Programa una demo para ver cómo VizPlan asegura que cada trabajo avance los objetivos de tu empresa.",
             form: {
                 name: "Nombre",
                 email: "Correo Electrónico",
@@ -479,73 +431,65 @@ const translations = {
             }
         },
         footer: {
-            tagline: "Gestión de proyectos con IA",
+            tagline: "Creadores de VizPlan",
             product: "Producto",
             contact: "Contacto",
             getInTouch: "Contáctenos",
-            copyright: "© 2025 Hapsen. Todos los derechos reservados."
+            copyright: "© 2026 Hapsen. Todos los derechos reservados."
         }
     },
     ar: {
         nav: {
             features: "الميزات",
-            whyHapsen: "لماذا Hapsen",
+            whyHapsen: "لماذا VizPlan",
             about: "حول",
             getStarted: "ابدأ الآن"
         },
         hero: {
-            title: "إدارة المشاريع مع السياق المدمج",
-            subtitle: "الدردشة والأهداف والعمل في مكان واحد. شاهد كيف يترابط كل شيء عبر مؤسستك. قم بتوصيل الذكاء الاصطناعي المفضل لديك عبر MCP.",
+            title: "حقّق الأهداف، لا العمل العبثي",
+            subtitle: "يُوائم VizPlan، من Hapsen، كل مهمة مع أهداف شركتك، ويكشف المخاطر تلقائياً، ويتكامل مع أدواتك الحالية والذكاء الاصطناعي.",
             requestDemo: "طلب عرض توضيحي",
             learnMore: "معرفة المزيد"
         },
         features: {
-            title: "كل ما تحتاجه في مكان واحد",
+            title: "ما يفعله VizPlan",
             card1: {
-                title: "دردشة متكاملة",
-                description: "المحادثات تحدث حيث يحدث العمل. سياق كامل دون التنقل بين الأدوات أو فقدان القرارات."
+                title: "مواءمة الأهداف مع المهام",
+                description: "من أهداف الشركة إلى المهام الفردية، كل عمل يرتبط بهدف استراتيجي، مما يضمن عدم الانحراف عن المسار."
             },
             card2: {
-                title: "لوحات معلومات موحدة",
-                description: "تجميع العمل عبر الفرق ومستويات المؤسسة. شاهد التقدم والعوائق والأولويات في كل مستوى."
+                title: "كشف العمل الذكي",
+                description: "يحدد تلقائياً الجهود المكررة ويربط الموظفين العاملين على مهام ذات صلة عبر الفرق، مما يوفر الوقت ويشارك المعرفة."
             },
             card3: {
-                title: "الأهداف والعمل موحدان",
-                description: "OKRs والمهام في مكان واحد، مرتبطة مباشرة. لا مزيد من الأنظمة المنفصلة—شاهد كيف يدفع العمل اليومي الأهداف الاستراتيجية."
+                title: "لوحة معلومات القادة",
+                description: "يظهر العمل المعرض للخطر والمحظور تلقائياً. يُحسب التقدم والحالة من إشارات حقيقية — لا مزيد من اجتماعات الحالة لمعرفة أين تقف الأمور."
             },
             card4: {
-                title: "تمكين الذكاء الاصطناعي عبر MCP",
-                description: "قم بتوصيل أداة الذكاء الاصطناعي المفضلة لديك من خلال تكامل MCP. أتمتة سير العمل، والحصول على رؤى، والعمل بذكاء أكبر."
-            },
-            card5: {
-                title: "عروض مخصصة",
-                description: "كانبان، قائمة، جدول زمني، تقويم—اعرض عملك بالطريقة التي تناسبك أنت وفريقك."
-            },
-            card6: {
-                title: "رؤية عبر المؤسسة",
-                description: "شاهد كيف يترابط العمل عبر المؤسسة. التبعيات والتجميعات والمحاذاة في عرض واحد."
+                title: "أحضر ذكاءك الاصطناعي",
+                description: "ادمج أدوات الذكاء الاصطناعي الخاصة بك للحفاظ على سياق شركتك. يتزامن VizPlan أيضاً مع أنظمة إدارة المشاريع الحالية عبر تكاملات ثنائية الاتجاه."
             }
         },
         whyHapsen: {
-            title: "لماذا Hapsen؟",
-            description: "معظم أدوات إدارة المشاريع تجبرك على الاختيار: السياق أو الهيكل. الدردشة في تطبيق، والمهام في آخر، والأهداف في جدول بيانات. Hapsen يجمع كل شيء معاً.",
+            title: "لماذا VizPlan؟",
+            description: "تضع الشركات أهدافاً سنوية، ثم ينحرف العمل اليومي عنها. يهدر القادة وقتهم في ملاحقة تحديثات الحالة. تكرر الفرق العمل دون علمها. بنت Hapsen منتج VizPlan لحل هذه المشكلة.",
             item1: {
-                title: "كل شيء في مكان واحد",
-                description: "الدردشة والمهام والأهداف ولوحات المعلومات—لا مزيد من التبديل بين الأدوات"
+                title: "كل مهمة تدفع هدفاً للأمام",
+                description: "يُنظم العمل من أهداف الشركة وصولاً إلى المهام الفردية، لا شيء يسقط من الحسبان"
             },
             item2: {
-                title: "الأهداف مرتبطة بالعمل",
-                description: "شاهد بالضبط كيف تتراكم المهام اليومية نحو الأهداف الاستراتيجية عبر مؤسستك"
+                title: "القادة يرون ما يهم",
+                description: "العمل المعرض للخطر والعناصر المحظورة والجهود المكررة تظهر تلقائياً — لا مزيد من اجتماعات الحالة"
             }
         },
         about: {
-            title: "مبني لطريقة عمل الفرق الفعلية",
-            paragraph1: "الفرق تغرق في الأدوات. الدردشة هنا، والمهام هناك، والأهداف في مكان آخر، واجتماعات الحالة التي لا تنتهي لإبقاء الجميع متوافقين. المعلومات تضيع، والسياق يختفي، والعمل يحدث في صوامع.",
-            paragraph2: "يوحد Hapsen التواصل وإدارة المشاريع وتتبع الأهداف في منصة واحدة. مع الذكاء الاصطناعي المدمج عبر MCP، يمكن للفرق أتمتة العمل الروتيني، واكتشاف الرؤى، والتركيز على ما يهم—تقديم عمل رائع معاً."
+            title: "عمل يستحق أن تستيقظ من أجله",
+            paragraph1: "تأسست Hapsen على يد أشخاص رأوا ما يكفي — فرق موهوبة تحترق تحت قيادة سيئة، ونجاح لا يُقاس إلا بخطوط على رسم بياني، وبيئات عمل نسيت أنها مكوّنة من بشر حقيقيين. مؤسسونا قادمون من شركات عالمية وشركات ناشئة أحادية القرن ومشاريع فردية، يجمعهم إيمان واحد: النجاح الكبير لا يجب أن يأتي على حساب سعادة الناس.",
+            paragraph2: "نؤمن بأن الشركة هي مجموعة من الأشخاص يجتمعون لجعل شيء ما في العالم أفضل. الربح دليل على القيمة، وليس الغاية. نمارس مشاركة الأرباح، ونمنح كل موظف صوتاً مسموعاً، ونُلزم أنفسنا بمعايير تميّز تمنح الطاقة بدلاً من أن تستنزفها. نبني أدوات تساعد المؤسسات على العمل بالطريقة التي ينبغي أن تعمل بها — وVizPlan هي حيث بدأنا."
         },
         contact: {
-            title: "هل أنت مستعد للعمل بشكل أفضل معاً؟",
-            description: "حدد موعداً للعرض التوضيحي لمعرفة كيف يجمع Hapsen الدردشة والأهداف والعمل في منصة متصلة واحدة.",
+            title: "هل أنت مستعد لمواءمة فريقك؟",
+            description: "حدد موعداً للعرض التوضيحي لترى كيف يضمن VizPlan أن كل عمل يدفع أهداف شركتك للأمام.",
             form: {
                 name: "الاسم",
                 email: "البريد الإلكتروني",
@@ -560,73 +504,65 @@ const translations = {
             }
         },
         footer: {
-            tagline: "إدارة المشاريع بالذكاء الاصطناعي",
+            tagline: "صانعو VizPlan",
             product: "المنتج",
             contact: "اتصل",
             getInTouch: "تواصل معنا",
-            copyright: "© 2025 Hapsen. جميع الحقوق محفوظة."
+            copyright: "© 2026 Hapsen. جميع الحقوق محفوظة."
         }
     },
     pt: {
         nav: {
             features: "Recursos",
-            whyHapsen: "Por que Hapsen",
+            whyHapsen: "Por que VizPlan",
             about: "Sobre",
             getStarted: "Começar"
         },
         hero: {
-            title: "Gestão de projetos com contexto integrado",
-            subtitle: "Chat, metas e trabalho em um só lugar. Veja como tudo se conecta em sua organização. Conecte sua IA favorita via MCP.",
+            title: "Avance objetivos, não trabalho inútil",
+            subtitle: "VizPlan, da Hapsen, alinha cada tarefa aos objetivos da sua empresa, detecta riscos automaticamente e se integra com suas ferramentas e IA existentes.",
             requestDemo: "Solicitar uma Demonstração",
             learnMore: "Saiba Mais"
         },
         features: {
-            title: "Tudo o que você precisa em um só lugar",
+            title: "O que o VizPlan faz",
             card1: {
-                title: "Chat Integrado",
-                description: "Conversas acontecem onde o trabalho acontece. Contexto completo sem pular entre ferramentas ou perder decisões."
+                title: "Alinhamento de Objetivos a Tarefas",
+                description: "Dos objetivos da empresa às tarefas individuais. Cada trabalho se conecta a um objetivo estratégico, garantindo que nada saia do rumo."
             },
             card2: {
-                title: "Painéis Unificados",
-                description: "Consolide o trabalho de equipes e níveis organizacionais. Veja progresso, bloqueios e prioridades em cada nível."
+                title: "Detecção Inteligente de Trabalho",
+                description: "Identifica automaticamente esforços duplicados e conecta funcionários trabalhando em tarefas relacionadas entre equipes, economizando tempo e compartilhando conhecimento."
             },
             card3: {
-                title: "Metas e Trabalho Unidos",
-                description: "OKRs e tarefas em um só lugar, diretamente conectados. Sem sistemas separados—veja como o trabalho diário impulsiona metas estratégicas."
+                title: "Painel do Líder",
+                description: "Trabalhos em risco e bloqueados são exibidos automaticamente. Progresso e status são calculados a partir de sinais reais — sem mais reuniões de status para descobrir como as coisas estão."
             },
             card4: {
-                title: "IA Habilitada via MCP",
-                description: "Conecte sua ferramenta de IA favorita através da nossa integração MCP. Automatize fluxos de trabalho, obtenha insights e trabalhe de forma mais inteligente."
-            },
-            card5: {
-                title: "Visualizações Personalizadas",
-                description: "Kanban, lista, linha do tempo, calendário—visualize seu trabalho da maneira que faz sentido para você e sua equipe."
-            },
-            card6: {
-                title: "Visibilidade Inter-Organizacional",
-                description: "Veja como o trabalho se correlaciona em toda a organização. Dependências, consolidações e alinhamento em uma visualização."
+                title: "Traga Sua Própria IA",
+                description: "Integre suas próprias ferramentas de IA para manter o contexto da sua empresa. VizPlan também sincroniza com sistemas de gestão existentes via integrações bidirecionais."
             }
         },
         whyHapsen: {
-            title: "Por que Hapsen?",
-            description: "A maioria das ferramentas de gestão de projetos força você a escolher: contexto ou estrutura. Chat em um app, tarefas em outro, metas em uma planilha. Hapsen une tudo.",
+            title: "Por que VizPlan?",
+            description: "Empresas definem metas anuais, mas o trabalho diário se afasta delas. Líderes perdem tempo perseguindo atualizações de status. Equipes duplicam trabalho sem saber. Hapsen criou o VizPlan para resolver isso.",
             item1: {
-                title: "Tudo em um só lugar",
-                description: "Chat, tarefas, metas e painéis—sem mais troca de contexto entre ferramentas"
+                title: "Cada tarefa avança um objetivo",
+                description: "O trabalho é estruturado dos objetivos da empresa até as tarefas individuais, nada passa despercebido"
             },
             item2: {
-                title: "Metas conectadas ao trabalho",
-                description: "Veja exatamente como as tarefas diárias se consolidam para os objetivos estratégicos da organização"
+                title: "Líderes veem o que importa",
+                description: "Trabalhos em risco, itens bloqueados e esforços duplicados são exibidos automaticamente — sem mais reuniões de status"
             }
         },
         about: {
-            title: "Construído para como as equipes realmente trabalham",
-            paragraph1: "As equipes estão se afogando em ferramentas. Chat aqui, tarefas ali, metas em outro lugar, e reuniões de status intermináveis para manter todos alinhados. Informações se perdem, contexto desaparece e o trabalho acontece em silos.",
-            paragraph2: "Hapsen unifica comunicação, gestão de projetos e acompanhamento de metas em uma plataforma. Com IA integrada via MCP, as equipes podem automatizar trabalho rotineiro, descobrir insights e focar no que importa—entregar ótimo trabalho juntos."
+            title: "Um trabalho pelo qual vale a pena acordar",
+            paragraph1: "A Hapsen foi fundada por pessoas que já tinham visto o bastante — equipes talentosas esgotando-se sob lideranças ruins, sucesso medido apenas por linhas em um gráfico e ambientes de trabalho que esqueceram que são feitos de pessoas reais. Nossos fundadores vêm de grandes empresas globais, startups unicórnio e empreendimentos individuais, unidos por uma convicção: o grande sucesso não precisa custar a felicidade das pessoas.",
+            paragraph2: "Acreditamos que uma empresa é um conjunto de pessoas que se unem para tornar algo no mundo melhor. O lucro é a prova de valor, não o propósito. Praticamos a participação nos lucros, damos voz a cada colaborador e nos comprometemos com um padrão de excelência que energiza em vez de esgotar. Construímos ferramentas para ajudar organizações a trabalharem da forma como deveriam — e o VizPlan foi onde tudo começou."
         },
         contact: {
-            title: "Pronto para trabalhar melhor juntos?",
-            description: "Agende uma demonstração para ver como Hapsen integra chat, metas e trabalho em uma plataforma conectada.",
+            title: "Pronto para alinhar sua equipe?",
+            description: "Agende uma demonstração para ver como o VizPlan garante que cada trabalho avance os objetivos da sua empresa.",
             form: {
                 name: "Nome",
                 email: "E-mail",
@@ -641,11 +577,11 @@ const translations = {
             }
         },
         footer: {
-            tagline: "Gestão de projetos com IA",
+            tagline: "Criadores do VizPlan",
             product: "Produto",
             contact: "Contato",
             getInTouch: "Entre em Contato",
-            copyright: "© 2025 Hapsen. Todos os direitos reservados."
+            copyright: "© 2026 Hapsen. Todos os direitos reservados."
         }
     }
 };
